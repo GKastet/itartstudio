@@ -5,6 +5,7 @@ import Loader from "./components/Loader/Loader";
 
 const Home = lazy(() => import("./pages/1.Home/Home"));
 const About = lazy(() => import("./pages/2.About/About"));
+console.log('About: ', About);
 
 
 function App() {
