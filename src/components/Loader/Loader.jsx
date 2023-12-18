@@ -8,7 +8,7 @@ const Loader = () => {
         strokeColor="green"
         strokeWidth="5"
         animationDuration="0.9"
-        width="96"
+        width="200"
         visible={true}
       />
     </LoaderBox>
