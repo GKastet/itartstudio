@@ -1,6 +1,6 @@
-import { Container, Image, Paragraph, Time, Title } from "./HomeStyled";
 import { useState, useEffect } from "react";
 import web from "../../images/web.png";
+import { Container, Image, Paragraph, Time, Title } from "./HomeStyled";
 
 const Home = () => {
   const [timeRemaining, setTimeRemaining] = useState({
