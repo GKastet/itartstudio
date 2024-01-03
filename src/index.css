@@ -1,3 +1,6 @@
+@import '../src/stylesheet/vars.css';
+/* @import '../src/stylesheet/fonts.css'; */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,8 +14,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  --transition-general: 300ms linear;
 }
 
 h1,
@@ -81,6 +82,10 @@ button:focus-visible {
 
 img {
   display: block;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 @media (prefers-color-scheme: light) {
