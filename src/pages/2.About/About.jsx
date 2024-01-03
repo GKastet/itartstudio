@@ -6,6 +6,7 @@ const About = ({ lang }) => {
   console.log("lang: ", lang);
   const { sectionIntroduction, sectionWhereIdeaMeets } = textsAbout;
   return (
+    <>
     <div style={{width:'700px', height: '500px', outline: '1px solid orange'}}>
       <div>About</div>
       <h1>
@@ -27,6 +28,9 @@ const About = ({ lang }) => {
           {lang==="ua"&&sectionWhereIdeaMeets.box3.ua}
         </p>
     </div>
+    <Hero/>
+    </>
+
   );
 };
 
