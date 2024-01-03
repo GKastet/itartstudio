@@ -10,13 +10,18 @@ const About = lazy(() => import("./pages/2.About"));
 
 function App() {
   const [lang, setLang] = useState('eng')
+
+  const funcChangeLanguage = (evt) => {    
+    const currentLang = evt.currentTarget.value.toLowerCase()    
+    setLang(currentLang);
+  }
   return (
     // <Home/>
     <Suspense fallback={<Loader />}>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout lang={lang} funcChangeLanguage={funcChangeLanguage}/>}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="about" element={<About lang={lang}/>} />
           <Route path="*" element={<Navigate to="/" />}></Route>
         </Route>
       </Routes>
