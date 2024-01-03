@@ -14,9 +14,10 @@ export const StyledHero = styled.section`
     text-transform: uppercase;
     font-size: 120px;
     font-weight: 700px;
+    margin-bottom: 45px;
   }
 
-  span{ 
+  h1 span{ 
     display: inline-block;
     width: 356px;
     height: 82px;
@@ -29,12 +30,6 @@ export const StyledHero = styled.section`
     margin-left: 40px;
   }
 
-  svg{
-    display: inline-block;
-    width: inherit;
-    height: inherit;
-  }
-
   & > div {
     display: flex;
     margin-left: 178px;
@@ -45,6 +40,7 @@ export const StyledHero = styled.section`
     outline: 1px solid blue;
     width: 842px;
     height: 639px;
+    position: relative;
   }
 
   div + div {
