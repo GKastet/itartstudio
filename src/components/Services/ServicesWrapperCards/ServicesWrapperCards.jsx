@@ -24,7 +24,7 @@ function ServicesWrapperCards() {
         classSelectedConfirmingMove,
         PLACE_ACTIVE_CARD
       );
-      console.log("newClasses: ", newClasses);
+
       classSelectedConfirmingMove
         ? selectedCard.classList.replace(
             classSelectedConfirmingMove,

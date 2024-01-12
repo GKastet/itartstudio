@@ -24,7 +24,6 @@ const StyledRedesignCard = styled.div`
   background-color: green;
 
   padding: 40px 0 48px 660px;
-  box-sizing: border-box;
   transition: transform linear 1s, background-color linear 1s;
 
   h3 {

@@ -24,7 +24,6 @@ const StyledCorporateCard = styled.div`
   background-color: #d3a0a0;
 
   padding: 40px 0 48px 660px;
-  box-sizing: border-box;
   transition: transform linear 1s, background-color linear 1s;
 
   h3 {
