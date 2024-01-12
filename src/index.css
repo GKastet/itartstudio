@@ -2,7 +2,7 @@
 @import '../src/stylesheet/fonts.css';
 
 :root {
-  font-family: 400-proxima-nova, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: '400-proxima-nova', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

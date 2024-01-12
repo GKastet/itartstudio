@@ -27,7 +27,7 @@ const StyledLandingCard = styled.div`
 
   h3 {
     color: #1c0f0f;
-    /* font-family: "Bold-proxima-nova"; */
+    font-family: "700-proxima-nova";
     font-size: 40px;
     font-style: normal;
     font-weight: 700;

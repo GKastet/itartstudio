@@ -16,7 +16,7 @@ export const Container = styled.div`
     width: 100%;
     margin: 0 20px 120px 0;
 
-    /* font-family: "Bold-proxima-nova"; */
+    font-family: "700-proxima-nova";
     font-size: 56px;
     font-style: normal;
     font-weight: 700;
@@ -35,13 +35,14 @@ export const Container = styled.div`
 export const StyledServicesDescription = styled(StyledSectionDescription)`
   max-width: 772px;
   width: 100%;
-  /* font-family: "Medium-proxima-nova"; */
+  font-family: "500-proxima-nova";
+  font-weight: 500;
+
   .accent-text {
-    /* color: #1c0f0f; */
-    /* font-family: "Bold-proxima-nova"; */
-    /* font-size: 32px; */
+    color: #1c0f0f;
+    font-family: "700-proxima-nova";
+    font-size: 32px;
     font-style: normal;
-    /* font-weight: 700; */
-    line-height: normal;
+    font-weight: 700;
   }
 `;
