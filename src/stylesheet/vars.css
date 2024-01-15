@@ -1,0 +1,22 @@
+:root {
+    /* colors */
+    --body-color: #FFF;
+    --gray-background-color: #EFEFEF;
+    --title-color: #1C0F0F;
+    --main-text-color: #1C0F0F;
+    --primary-text-color: #2A2828;
+    --grey-text-color: #AEAEAE;
+    --yellow: #E7F63C;
+    --white: #FFF;
+    --black: #000;
+    --grey: #AEAEAE;
+
+    /* shadows */
+    --header-shadow: 0px 0px 80px 0px rgba(204, 204, 204, 0.16);
+    --services-shadow: 0px 0px 80px 0px rgba(204, 204, 204, 0.16);
+
+    /* borders */
+    --yellow-border:  2px solid var(--yellow);
+
+    --transition-general: 300ms linear;
+}
