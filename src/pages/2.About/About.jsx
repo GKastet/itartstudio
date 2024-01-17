@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { textsAbout } from "../../helpers/texts";
 import Hero from "../../components/Hero";
 import Services from "../../components/Services";
+import FeaturesList from "../../components/Features/FeaturesList/FeaturesList";
 
 const About = ({ lang }) => {
   console.log("lang: ", lang);
@@ -32,6 +33,7 @@ const About = ({ lang }) => {
         </p>
       </div>
       <Hero />
+      <FeaturesList />
       <Services />
     </>
   );
