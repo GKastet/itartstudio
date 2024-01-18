@@ -12,6 +12,7 @@ import {
 } from "./HeaderStyled";
 
 const Header = ({ lang, funcChangeLanguage }) => {
+  // console.log('lang: ', lang);
   return (
     <HeaderWrapper>
       <HeaderBox>
