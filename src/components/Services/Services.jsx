@@ -4,7 +4,7 @@ import ServicesWrapperCards from "./ServicesWrapperCards/ServicesWrapperCards";
 
 function Services() {
   return (
-    <section>
+    <section id="services">
       <Container>
         <h2>
           We deliver web design and development solutions
