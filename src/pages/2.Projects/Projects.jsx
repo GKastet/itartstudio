@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import { textsAbout } from "../../helpers/texts";
-import Hero from "../../components/Hero";
-import Services from "../../components/Services";
-import FeaturesList from "../../components/Features/FeaturesList/FeaturesList";
+// import Hero from "../../components/Hero";
+// import Services from "../../components/Services";
+// import FeaturesList from "../../components/Features/FeaturesList/FeaturesList";
 
-const About = ({ lang }) => {
-  console.log("lang: ", lang);
+const ProjectsPage = ({ lang }) => {
+  // console.log("lang: ", lang);
   const { sectionIntroduction, sectionWhereIdeaMeets } = textsAbout;
   return (
     <>
@@ -32,15 +32,15 @@ const About = ({ lang }) => {
           {lang === "ua" && sectionWhereIdeaMeets.box3.ua}
         </p>
       </div>
-      <Hero />
+      {/* <Hero />
       <FeaturesList />
-      <Services />
+      <Services /> */}
     </>
   );
 };
 
-About.propTypes = {
+ProjectsPage.propTypes = {
   lang: PropTypes.string,
 };
 
-export default About;
+export default ProjectsPage;

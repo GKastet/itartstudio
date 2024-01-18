@@ -5,13 +5,13 @@ import {
   FeaturesListS,
   Container,
   SectionTitle,
-  SectionTitleWrap
+  SectionTitleWrap,
 } from "./FeaturesListStyled";
 import icon from "../../../assets/icons.svg";
 
 const FeaturesList = () => {
   return (
-        <Container>
+    <Container>
       <SectionTitleWrap>
         <SectionTitle>
           Where idea meets innovation
@@ -27,7 +27,7 @@ const FeaturesList = () => {
         <FeaturesItemDesc />
         <FeaturesItemResult />
       </FeaturesListS>
-      </Container>
+    </Container>
   );
 };
 
