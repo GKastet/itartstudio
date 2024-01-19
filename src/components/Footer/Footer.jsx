@@ -1,17 +1,7 @@
-// import { Link } from "react-router-dom";
-
-// const Footer = () => {
-//   return (
-//     <>
-//       <div>Footer</div>
-//     </>
-//   );
-// };
-
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import WhiteLogo from "../../images/WhiteLogo.svg";
+import FooterLogo from "../../images/footerlogo.svg";
 import {
   FooterBox,
   FooterWrapper,
@@ -77,7 +67,7 @@ const Footer = ({ lang, funcChangeLanguage }) => {
         <FooterLogoList>
           <LogoBox>
            <Link to="/">
-             <img src={WhiteLogo} alt="United web studio logo" />
+             <img src={FooterLogo} alt="United web studio logo" />
            </Link>
           </LogoBox>
           <FooterTagline>
