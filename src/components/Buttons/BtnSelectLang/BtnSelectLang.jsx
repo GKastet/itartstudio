@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
 import { useEffect, useRef, useState } from "react";
+import { useLang } from "../../../langContext";
 import { languages } from "../../../helpers/languages";
 import {
   ButtonStyled,
@@ -8,9 +8,10 @@ import {
   SelectWrapper,
 } from "./BtnSelectLangStyled";
 
-const BtnSelectLang = ({ lang, funcChangeLanguage }) => {
+const BtnSelectLang = () => {
+  const {lang, funcChangeLanguage} = useLang()
   const [openSelect, setOpenSelect] = useState(false);
-  const backgroundRef = useRef(null);
+  const backgroundRef = useRef(null);  
   
   useEffect(() => {
     const handleDocumentClick = (event) => {
@@ -34,7 +35,7 @@ const BtnSelectLang = ({ lang, funcChangeLanguage }) => {
   }
 
   const handleClickLang = (evt) =>{
-    funcChangeLanguage(evt)
+    funcChangeLanguage(evt);
     setOpenSelect(false);
   }  
   
@@ -62,11 +63,6 @@ const BtnSelectLang = ({ lang, funcChangeLanguage }) => {
       </LanguageList>
     </SelectWrapper>
   );
-};
-
-BtnSelectLang.propTypes = {
-  lang: PropTypes.string,
-  funcChangeLanguage: PropTypes.func,
 };
 
 export default BtnSelectLang;
