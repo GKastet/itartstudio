@@ -16,3 +16,32 @@ src:url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?primer=
 font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 }
 
+@font-face {
+    font-family: "400-Montserrat";
+    src: url(../assets/Fonts/Montserrat-Regular.ttf);
+    /* src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+}
+
+@font-face {
+    font-family: "500-Montserrat";
+    src: url(../assets/Fonts/Montserrat-Medium.ttf);
+    /* src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
+}
+
+@font-face {
+    font-family: "600-Montserrat";
+    src: url(../assets/Fonts/Montserrat-SemiBold.ttf);
+    /* src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap'); */
+}
+
+@font-face {
+    font-family: "700-Montserrat";
+    src: url(../assets/Fonts/Montserrat-Bold.ttf);
+    /* src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); */
+}
+
+@font-face {
+    font-family: "400-NotoSans";
+    src: url(../assets/Fonts/NotoSans-Regular.ttf);
+    /* src: url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap'); */
+}
