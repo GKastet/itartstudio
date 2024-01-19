@@ -11,6 +11,7 @@ import {
 const BtnSelectLang = ({ lang, funcChangeLanguage }) => {
   const [openSelect, setOpenSelect] = useState(false);
   const backgroundRef = useRef(null);
+  
   useEffect(() => {
     const handleDocumentClick = (event) => {
       if (
@@ -27,15 +28,22 @@ const BtnSelectLang = ({ lang, funcChangeLanguage }) => {
       document.removeEventListener("click", handleDocumentClick);
     };
   }, [openSelect]);
-  const handleOnClickSelect = () => {
+
+  const toggleSelect = ()=>{
     setOpenSelect(!openSelect);
-  };
+  }
+
+  const handleClickLang = (evt) =>{
+    funcChangeLanguage(evt)
+    setOpenSelect(false);
+  }  
+  
   return (
     <SelectWrapper ref={backgroundRef}>
-      <ButtonStyled type="button" onClick={handleOnClickSelect}>
-        <p>{lang}</p>
+      <ButtonStyled type="button" onMouseEnter={()=>toggleSelect()}>
+        <p>{lang.toUpperCase()}</p>
       </ButtonStyled>
-      <LanguageList className={openSelect ? "openSelect" : ""}>
+      <LanguageList className={openSelect ? "openSelect" : ""} onMouseLeave={()=>setOpenSelect(false)}>
         {languages.map((language) => (
           <LangItem key={language}>
             <input
@@ -43,11 +51,11 @@ const BtnSelectLang = ({ lang, funcChangeLanguage }) => {
               name="language"
               id={language}
               className="custom-checkbox"
-              value={language}
-              onChange={funcChangeLanguage}
+              value={language}              
+              onChange={handleClickLang}
             />
             <label htmlFor={language}>
-              <p>{language}</p>
+              <p>{language.toUpperCase()}</p>
             </label>
           </LangItem>
         ))}

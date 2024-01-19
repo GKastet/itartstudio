@@ -1,10 +1,9 @@
-export const textsHeader = {
-  title: {
-    eng: "",
-    sk: "",
-    pl: "",
-    ua: "",
-  },
+import { textsHeader } from "./textsAll/sectionHeader";
+import { textsFooter } from "./textsAll/sectionFooter";
+
+export const texts = {
+  header: textsHeader,
+  footer: textsFooter,
 };
 
 export const textsHome = {};
@@ -45,4 +44,4 @@ export const textsAbout = {
     },
   },
 };
-export const textsFooter = {};
+
