@@ -1,14 +1,11 @@
-import { Link } from "react-router-dom"
-
+// import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <>
-    <div>Footer</div>
-    <Link to='/'>Home | </Link>
-    <Link to='/about'>About</Link>
+      <div>Footer</div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

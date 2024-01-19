@@ -6,7 +6,8 @@ import Layout from "./components/Layout";
 //import Home from "./pages/1.Home/Home";
 
 const Home = lazy(() => import('./pages/1.Home'));
-const About = lazy(() => import("./pages/2.About"));
+const Projects = lazy(() => import("./pages/2.Projects"));
+const Contacts = lazy(() => import("./pages/3.Contacts"));
 
 function App() {
   const [lang, setLang] = useState('eng')
@@ -21,7 +22,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout lang={lang} funcChangeLanguage={funcChangeLanguage}/>}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About lang={lang}/>} />
+          <Route path="projects" element={<Projects lang={lang}/>} />
+          <Route path="contacts" element={<Contacts lang={lang}/>} />
           <Route path="*" element={<Navigate to="/" />}></Route>
         </Route>
       </Routes>

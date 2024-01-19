@@ -9,7 +9,7 @@ function Services({ lang, name }) {
   console.log("sectionContent: ", sectionContent);
 
   return (
-    <section>
+    <section id="services">
       <Container>
         <h2>
           {sectionContent.title}
