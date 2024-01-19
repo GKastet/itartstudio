@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 0 178px 120px;
+  max-width: 1920px;
+  width: 100%;
+  padding: 76px 0 60px;
   background-color: var(--body-color);
 `;
 
 export const FeatersSection = styled.section`
-  margin-bottom: 120px;
+  /* padding: 120px 178px 120px; */
+  padding: 0 178px;
 `;
 
 export const SectionTitleWrap = styled.div`
