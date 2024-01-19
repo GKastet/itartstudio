@@ -22,32 +22,40 @@ export const HeaderBox = styled.div`
 `;
 
 export const SectionsList = styled.ul`
-  /* outline: 1px solid green; */
+  /* outline: 1px solid blue; */
+  width: 380px;
   display: flex;
   align-items: center;
-  gap: 40px;
+  justify-content: space-between;  
   /* font-family: Montserrat; */
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   li {
+    /* outline: 1px solid red; */
     a {
       cursor: pointer;
       padding: 4px 8px;
       color: var(--main-text-color);
-      border: 2px solid;
-      border-color: transparent;
+      border: var(--transparent-border);
       border-radius: 200px;
       transition: border var(--transition-general);
-      &:hover {
-        border-color: var(--yellow);
+
+      &:hover,
+      &:focus {
+        outline-color: transparent;
+        border: var(--yellow-border);
         /* font-weight: bold; */
       }
     }
   }
   &.listMargin {
-    margin-left: 130px;
+    margin-left: 100px;
+  }
+  &.rightSide {
+    /* outline: 1px solid green; */
+    width: 500px;
   }
 `;
 export const LogoBox = styled.div`
@@ -67,6 +75,7 @@ export const LogoBox = styled.div`
 `;
 
 export const BtnContactUs = styled.button`
+  width: 182px;
   padding: 22px;
   border-radius: 200px;
   background-color: var(--yellow);
@@ -74,11 +83,12 @@ export const BtnContactUs = styled.button`
   padding: 22px;
   justify-content: center;
   align-items: center;
-  border: 2px solid;
-  border-color: transparent;
+  border: var(--transparent-border);
   transition: background-color var(--transition-general);
-  &:hover {
-    border-color: var(--yellow);
+  &:hover,
+  &:focus {
+    outline-color: transparent;
+    border: var(--yellow-border);
     background-color: var(--white);
   }
 `;

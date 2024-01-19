@@ -3,10 +3,10 @@ import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-const Layout = ({lang, funcChangeLanguage}) => {
+const Layout = ({ lang, funcChangeLanguage }) => {
   return (
     <>
-      <Header lang={lang} funcChangeLanguage={funcChangeLanguage}/>
+      <Header lang={lang} funcChangeLanguage={funcChangeLanguage} />
       <Outlet />
       <Footer />
     </>

@@ -3,21 +3,19 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Loader from "./components/Loader";
 import Layout from "./components/Layout";
 
-//import Home from "./pages/1.Home/Home";
-
 const Home = lazy(() => import('./pages/1.Home'));
 const Projects = lazy(() => import("./pages/2.Projects"));
 const Contacts = lazy(() => import("./pages/3.Contacts"));
 
 function App() {
-  const [lang, setLang] = useState('eng')
+  const [lang, setLang] = useState('en')
 
-  const funcChangeLanguage = (evt) => {    
-    const currentLang = evt.currentTarget.value.toLowerCase()    
+  const funcChangeLanguage = (evt) => {           
+    const currentLang = evt.currentTarget.value
     setLang(currentLang);
   }
-  return (
-    // <Home/>
+  console.log("render");
+  return (    
     <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<Layout lang={lang} funcChangeLanguage={funcChangeLanguage}/>}>
