@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { texts } from "../../helpers/texts";
@@ -11,19 +10,21 @@ import {
   LogoBox,
   SectionsList,
 } from "./HeaderStyled";
+import { useLang } from "../../langContext";
 
-const Header = ({ lang, funcChangeLanguage }) => {
+const Header = () => {
+  const { lang } = useLang();
   const {
     header: { sectionNames, logoAlt, pagesName, btnContactUs },
   } = texts;
   const sections = sectionNames[lang];
-  const sectionsTo = sectionNames.en
+  const sectionsTo = sectionNames.en;
   const pages = pagesName[lang];
-  const pagesLinkTo = pagesName.en;  
+  const pagesLinkTo = pagesName.en;
 
   const handleContactUs = () => {
     console.log("Contact Us");
-  }
+  };
 
   return (
     <HeaderWrapper>
@@ -57,23 +58,17 @@ const Header = ({ lang, funcChangeLanguage }) => {
             <Link to={`/${pagesLinkTo[1].toLowerCase()}`}>{pages[1]}</Link>
           </li>
           <li>
-            <BtnSelectLang
-              lang={lang}
-              funcChangeLanguage={funcChangeLanguage}
-            />
+            <BtnSelectLang />
           </li>
           <li>
-            <BtnContactUs type="button" onClick={handleContactUs}>{btnContactUs[lang]}</BtnContactUs>
+            <BtnContactUs type="button" onClick={handleContactUs}>
+              {btnContactUs[lang]}
+            </BtnContactUs>
           </li>
         </SectionsList>
       </HeaderBox>
     </HeaderWrapper>
   );
-};
-
-Header.propTypes = {
-  lang: PropTypes.string,
-  funcChangeLanguage: PropTypes.func,
 };
 
 export default Header;
