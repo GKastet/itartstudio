@@ -11,7 +11,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import WhiteLogo from "../../images/whiteLogo.svg";
+import WhiteLogo from "../../images/WhiteLogo.svg";
 import {
   FooterBox,
   FooterWrapper,
