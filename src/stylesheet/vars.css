@@ -18,6 +18,7 @@
 
     /* borders */
     --yellow-border:  2px solid var(--yellow);
+    --transparent-border: 2px solid transparent;
 
     --transition-general: 300ms linear;
 
