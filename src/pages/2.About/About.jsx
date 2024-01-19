@@ -32,7 +32,7 @@ const About = ({ lang }) => {
         </p>
       </div>
       <Hero />
-      <Services />
+      <Services lang={lang} name="test" />
     </>
   );
 };

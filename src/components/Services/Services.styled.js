@@ -24,7 +24,7 @@ export const Container = styled.div`
     z-index: 0;
   }
 
-  svg {
+  h2 svg {
     position: absolute;
     right: 202px;
     bottom: -4px;
