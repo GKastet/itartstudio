@@ -78,13 +78,13 @@ export const BtnContactUs = styled.button`
   width: 182px;
   padding: 22px;
   border-radius: 200px;
-  background-color: var(--yellow);
   display: inline-flex;
   padding: 22px;
   justify-content: center;
   align-items: center;
   border: var(--transparent-border);
-  transition: background-color var(--transition-general);
+  background-color: var(--yellow);
+  transition: background-color var(--transition-general), border var(--transition-general);
   &:hover,
   &:focus {
     outline-color: transparent;
