@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { StyledSectionDescription } from "../Typography/SectionDescription/SectionDescription.Styled";
 
 export const Container = styled.div`
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   background: #fff;
   color: #1c0f0f;
   padding: 0 178px 120px 178px;
@@ -12,8 +15,8 @@ export const Container = styled.div`
   h2 {
     position: relative;
 
-    max-width: 772px;
     width: 100%;
+    max-width: 772px;
     margin: 0 20px 120px 0;
 
     font-family: "700-proxima-nova";
@@ -33,8 +36,8 @@ export const Container = styled.div`
 `;
 
 export const StyledServicesDescription = styled(StyledSectionDescription)`
-  max-width: 772px;
   width: 100%;
+  max-width: 772px;
   font-family: "500-proxima-nova";
   font-weight: 500;
 

@@ -6,6 +6,6 @@ export const StyledServicesWrapperCards = styled.div`
   max-width: 1564px;
   height: 850px;
   border-radius: 40px;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   z-index: 0;
 `;

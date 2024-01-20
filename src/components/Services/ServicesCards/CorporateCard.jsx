@@ -26,9 +26,9 @@ const StyledCorporateCard = styled.div`
   box-shadow: 0px 0px 80px 0px rgba(204, 204, 204, 0.4);
 
   padding: 40px 0 48px 660px;
-  transition: transform cubic-bezier(0.61, -0.55, 0.49, 1.52) 320ms,
-    background-color linear 320ms, background-image linear 320ms,
-    color linear 320ms, box-shadow linear 320ms;
+  transition: transform cubic-bezier(0.61, -0.55, 0.49, 1.52) 450ms,
+    background-color linear 450ms, background-image linear 450ms,
+    color linear 450ms, box-shadow linear 450ms;
 
   h3 {
     color: #1c0f0f;

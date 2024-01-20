@@ -10,21 +10,26 @@ import {
   LogoBox,
   SectionsList,
 } from "./HeaderStyled";
+import getSectionContent from "../../helpers/getSectionContent";
 
-const Header = ({ lang, funcChangeLanguage }) => {
-  // console.log('lang: ', lang);
+const Header = ({ lang, funcChangeLanguage, sectionName }) => {
+  const sectionContent = getSectionContent(lang, sectionName);
+  // console.log("sectionHeaderContent: ", sectionContent);
+
   return (
     <HeaderWrapper>
       <HeaderBox>
         <SectionsList className="listMargin">
           <li>
             <ScrollLink to="main" smooth={true} duration={500}>
-              Main
+              {/* Main */}
+              {sectionContent.home_nav_list[0].nav_item}
             </ScrollLink>
           </li>
           <li>
             <ScrollLink to="about" smooth={true} duration={500}>
-              About
+              {/* About */}
+              {sectionContent.home_nav_list[1].nav_item}
             </ScrollLink>
           </li>
           <li>
@@ -64,6 +69,7 @@ const Header = ({ lang, funcChangeLanguage }) => {
 Header.propTypes = {
   lang: PropTypes.string,
   funcChangeLanguage: PropTypes.func,
+  sectionName: PropTypes.string,
 };
 
 export default Header;
