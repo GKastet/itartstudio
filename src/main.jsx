@@ -1,15 +1,18 @@
-import React from "react";
+// import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+import { LangProvider } from "./langContext.jsx";
 import App from "./App.jsx";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <BrowserRouter>
+  // <React.StrictMode>
+  <BrowserRouter>
+    <LangProvider>
       <App />
-    </BrowserRouter>
-  </React.StrictMode>
+    </LangProvider>
+  </BrowserRouter>
+  // </React.StrictMode>
 );
 
 // import React from 'react'
@@ -25,4 +28,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 //     </BrowserRouter>
 //   </React.StrictMode>
 // );
-

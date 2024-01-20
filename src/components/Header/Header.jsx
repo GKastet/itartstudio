@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
+import { texts } from "../../helpers/texts";
 import Logo from "../../images/Logo.svg";
-// import BtnSelectLang from "../Buttons/BtnSelectLang/BtnSelectLang";
+import BtnSelectLang from "../Buttons/BtnSelectLang/BtnSelectLang";
 import {
   BtnContactUs,
   HeaderBox,
@@ -10,66 +10,65 @@ import {
   LogoBox,
   SectionsList,
 } from "./HeaderStyled";
-import getSectionContent from "../../helpers/getSectionContent";
+import { useLang } from "../../langContext";
 
-const Header = ({ lang, funcChangeLanguage, sectionName }) => {
-  const sectionContent = getSectionContent(lang, sectionName);
-  // console.log("sectionHeaderContent: ", sectionContent);
+const Header = () => {
+  const { lang } = useLang();
+  const {
+    header: { sectionNames, logoAlt, pagesName, btnContactUs },
+  } = texts;
+  const sections = sectionNames[lang];
+  const sectionsTo = sectionNames.en;
+  const pages = pagesName[lang];
+  const pagesLinkTo = pagesName.en;
+
+  const handleContactUs = () => {
+    console.log("Contact Us");
+  };
 
   return (
     <HeaderWrapper>
       <HeaderBox>
         <SectionsList className="listMargin">
-          <li>
-            <ScrollLink to="main" smooth={true} duration={500}>
-              {/* Main */}
-              {sectionContent.home_nav_list[0].nav_item}
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink to="about" smooth={true} duration={500}>
-              {/* About */}
-              {sectionContent.home_nav_list[1].nav_item}
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink to="team" smooth={true} duration={500}>
-              Team
-            </ScrollLink>
-          </li>
-          <li>
-            <ScrollLink to="services" smooth={true} duration={500}>
-              Services
-            </ScrollLink>
-          </li>
+          {sections?.map((section, idx) => {
+            return (
+              <li key={section}>
+                <ScrollLink
+                  to={sectionsTo[idx]}
+                  smooth={true}
+                  duration={500}
+                  style={{ textTransform: "capitalize" }}
+                >
+                  {section}
+                </ScrollLink>
+              </li>
+            );
+          })}
         </SectionsList>
         <LogoBox>
           <Link to="/">
-            <img src={Logo} alt="United web studio logo" />
+            <img src={Logo} alt={logoAlt[lang]} />
           </Link>
         </LogoBox>
-        <SectionsList>
+        <SectionsList className="rightSide">
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link to={`/${pagesLinkTo[0].toLowerCase()}`}>{pages[0]}</Link>
           </li>
           <li>
-            <Link to="/contacts">Contacts</Link>
+            <Link to={`/${pagesLinkTo[1].toLowerCase()}`}>{pages[1]}</Link>
           </li>
-          <li>EN</li>
           <li>
-            <BtnContactUs type="button">CONTACT US</BtnContactUs>
+            <BtnSelectLang />
+          </li>
+          <li>
+            <BtnContactUs type="button" onClick={handleContactUs}>
+              {btnContactUs[lang]}
+            </BtnContactUs>
           </li>
         </SectionsList>
-        {/* <BtnSelectLang lang={lang} funcChangeLanguage={funcChangeLanguage} /> */}
       </HeaderBox>
     </HeaderWrapper>
   );
-};
-
-Header.propTypes = {
-  lang: PropTypes.string,
-  funcChangeLanguage: PropTypes.func,
-  sectionName: PropTypes.string,
 };
 
 export default Header;
