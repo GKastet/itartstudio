@@ -1,55 +1,76 @@
 import styled from "styled-components";
-import computerBoy from "../../images/computerBoy.png"
-import girl from "../../images/girl.png"
+import computerBoy from "../../images/computerBoy.png";
+import girl from "../../images/girl.png";
 
 export const StyledHero = styled.section`
   width: 100%;
   height: 1225px;
-  background-color: white;
-  padding-top: 96px;
+  background-color: var(--body-color);
   margin: 0 auto;
 
-  h1{
-    color: #1C0F0F;
+  h1 {
+    color: var(--title-color);
     text-transform: uppercase;
-    font-size: 120px;
-    font-weight: 700px;
-    margin-bottom: 45px;
+    font-size: 116px;
+    font-family: "700-Montserrat";
+    margin-bottom: 40px;
+    line-height: normal;
   }
 
-  h1 span{ 
+  h1 span {
     display: inline-block;
-    width: 356px;
-    height: 82px;
+    width: 316px;
+    height: 86px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 31px;
+    border-radius: 200px;
+    border: 2px solid var(--yellow);
     background-image: url(${girl});
   }
 
-  h1 > span:first-child{
-    width: 511px;
+  h1 > span:first-child {
+    width: 483px;
+    margin: 0 0 0 40px;
     background-image: url(${computerBoy});
-    margin-left: 40px;
   }
 
   & > div {
+    width: 100%;
+    height: 1225px;
     display: flex;
     margin-left: 178px;
-    gap: 214px;
+    gap: 225px;
+    padding-top: 100px;
+    margin: 0 auto;
+    padding-left: 178px;
   }
 
- & > div > div:first-child {
-    outline: 1px solid blue;
-    width: 842px;
-    height: 639px;
+  & > div > div:first-child {
+    width: 904px;
+    height: 425px;
     position: relative;
   }
 
   div + div {
-    padding-top: 168px;
-    outline: 1px solid blue;
-    width: 686px;
-    margin: 0;
-    display: block;
-    overflow: hidden;
-    height: 721px;
+    padding-top: 78px;
+  width: 766px;
+  margin: 0;
+  display: block;
+  overflow: hidden;
+  height: 781.5px;
   }
+
+  div + div > div {
+    padding: 0;
+}
+
+p { 
+width: 772px;
+font-size: 28px;
+}
+
+p > span {
+  font-family: "700-Montserrat";
+}
 `;
