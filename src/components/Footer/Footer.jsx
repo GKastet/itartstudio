@@ -92,14 +92,16 @@ const Footer = ({ lang, funcChangeLanguage }) => {
             </ScrollLink>
           </li>
           <li>
-            <Link to="main" smooth={true} duration={500}>
+            <Link to="main"
+              duration={500}>
               +380 98 876 6565
             </Link>
           </li>
 
           <FooterTitle>Write</FooterTitle>
            <li>
-            <Link to="main" smooth={true} duration={500}>
+            <Link to="main"
+            duration={500}>
  webstudiounited@gmail.com
             </Link>
           </li>
