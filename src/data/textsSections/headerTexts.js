@@ -1,27 +1,28 @@
 export const headerTexts = {
-  home_nav_list: [
-    {
-      nav_item: { eng: "Main", sk: "", pl: "", ua: "На головну" },
-    },
-    {
-      nav_item: { eng: "About", sk: "", pl: "", ua: "Про нас" },
-    },
-    {
-      nav_item: { eng: "Team", sk: "", pl: "", ua: "Команда" },
-    },
-    {
-      nav_item: { eng: "Services", sk: "", pl: "", ua: "Послуги" },
-    },
-  ],
-  site_nav_list: [
-    {
-      nav_item: { eng: "Projects", sk: "", pl: "", ua: "Проекти" },
-    },
-    {
-      nav_item: { eng: "Contacts", sk: "", pl: "", ua: "Контакти" },
-    },
-    {
-      lang_list: ["EN", "SK", "PL", "UA"],
-    },
-  ],
-};
+  sectionNames: {
+      en: ["main", "about", "team", "services"],
+      sk: ["hlavné", "o nás", "tím", "služby"],
+      pl: ["główne", "o nas", "zespół", "usługi"],
+      ua: ["головне", "про нас", "команда", "послуги"]
+  },
+  sectionIdAndPages: ["main", "about", "team", "services"],
+  pagesPath: ["Projects", "Contacts"],
+  logoAlt: {
+      en: ["United web studio logo"],
+      sk: ["United web studio logo"],
+      pl: ["United web studio logo"],
+      ua: ["логотип Юнайтед веб студіо"]
+  },
+  pagesName:{
+      en: ["Projects", "Contacts"],
+      sk: ["Projekty", "Kontakty"],
+      pl: ["Projekty", "Kontakty"],
+      ua: ["Проекти", "Контакти"]
+  },
+  btnContactUs: {
+      en: ["CONTACT US"],
+      sk: ["KONTAKTUJ NÁS"],
+      pl: ["SKONTAKTUJ NAS"],
+      ua: ["ЗВ'ЯЗОК З НАМИ"]
+  }
+}

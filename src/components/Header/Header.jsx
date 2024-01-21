@@ -11,12 +11,21 @@ import {
   SectionsList,
 } from "./HeaderStyled";
 import { useLang } from "../../langContext";
+import getSectionContent from "../../helpers/getSectionContent";
 
 const Header = () => {
   const { lang } = useLang();
+  const content = getSectionContent(lang, 'header');
+  console.log('content: ', content);
+  // const { sectionNames, sectionIdAndPages, pagesPath, logoAlt, pagesName, btnContactUs } = getSectionContent(lang, 'header');
+  
   const {
     header: { sectionNames, logoAlt, pagesName, btnContactUs },
   } = texts;
+  // const {
+  //   header: { sectionNames, logoAlt, pagesName, btnContactUs },
+  // } = content;
+
   const sections = sectionNames[lang];
   const sectionsTo = sectionNames.en;
   const pages = pagesName[lang];
