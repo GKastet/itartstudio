@@ -1,12 +1,18 @@
+// import { nanoid } from "nanoid";
+import PropTypes from "prop-types";
+
 import makeClassesServicesCards from "../../../helpers/makeClassesServicesCards";
+import BtnOrder from "../../Buttons/BtnOrder/BtnOrder";
 import CorporateCard from "../ServicesCards/CorporateCard";
 import LandingCard from "../ServicesCards/LandingCard";
 import RedesignCard from "../ServicesCards/RedesignCards";
 import { StyledServicesWrapperCards } from "./StyledServicesWrapperCards.styled";
+// import Card from "../ServicesCards/Card";
 
 const PLACE_ACTIVE_CARD = 3;
 
-function ServicesWrapperCards() {
+function ServicesWrapperCards({ cards }) {
+  console.log("cards: ", cards);
   const handleClickCard = (event) => {
     const selectedCard = event.currentTarget;
     const activeCard = document.querySelector(".active");
@@ -24,7 +30,7 @@ function ServicesWrapperCards() {
         classSelectedConfirmingMove,
         PLACE_ACTIVE_CARD
       );
-      console.log("newClasses: ", newClasses);
+
       classSelectedConfirmingMove
         ? selectedCard.classList.replace(
             classSelectedConfirmingMove,
@@ -45,12 +51,33 @@ function ServicesWrapperCards() {
   };
 
   return (
-    <StyledServicesWrapperCards>
-      <LandingCard handleClickCard={handleClickCard} />
-      <CorporateCard handleClickCard={handleClickCard} />
-      <RedesignCard handleClickCard={handleClickCard} />
-    </StyledServicesWrapperCards>
+    <>
+      <StyledServicesWrapperCards>
+        <LandingCard handleClickCard={handleClickCard} />
+        <CorporateCard handleClickCard={handleClickCard} />
+        <RedesignCard handleClickCard={handleClickCard} />
+        {/* {dataServicesCard.map((card, idx) => {
+        return (
+          <Card
+            key={nanoid()}
+            dataName={card.name_card}
+            handleClickCard={handleClickCard}
+            id={idx + 1}
+            className={`${card.name_card} ${
+              card.name_card === "redesign" && "active"
+            }`}
+            card={card}
+          />
+        );
+      })} */}
+        <BtnOrder />
+      </StyledServicesWrapperCards>
+    </>
   );
 }
 
 export default ServicesWrapperCards;
+
+ServicesWrapperCards.propTypes = {
+  cards: PropTypes.arrayOf(PropTypes.object),
+};

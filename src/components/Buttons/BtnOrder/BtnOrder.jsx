@@ -1,9 +1,14 @@
-
+import { BtnOrderStyled } from "./BtnOrderStyled";
 
 const BtnOrder = () => {
+  const handleClickBtn = () => {
+    console.log("CLICK button DISCUSS");
+  };
   return (
-    <div>BtnOrder</div>
-  )
-}
+    <BtnOrderStyled onClick={handleClickBtn}>
+      Discuss the project
+    </BtnOrderStyled>
+  );
+};
 
-export default BtnOrder
+export default BtnOrder;

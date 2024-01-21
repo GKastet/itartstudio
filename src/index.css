@@ -1,3 +1,4 @@
+@import '../node_modules/modern-normalize/modern-normalize.css';
 @import '../src/stylesheet/vars.css';
 @import '../src/stylesheet/fonts.css';
 
@@ -5,7 +6,7 @@
   /* font-family: '400-proxima-nova', system-ui, Avenir, Helvetica, Arial, sans-serif; */
   font-family: '500-Montserrat', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
