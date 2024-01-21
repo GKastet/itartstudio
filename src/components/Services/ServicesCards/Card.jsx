@@ -68,32 +68,12 @@ function Card({ handleClickCard, card, id, dataName, className }) {
           </div>
         </div>
       </StyledCard>
-      {/* <StyledTest>
-        <div className="second-div"></div>
-      </StyledTest> */}
     </>
   );
 }
 
 export default Card;
-// const StyledTest = styled.div`
-//   width: 500px;
-//   height: 200px;
-/* border: 10px solid blue; */
-// background-color: blue;
-/* outline: 1px solid blue; */
-// position: absolute;
-// left: 0;
-// top: 900px;
-// .second-div {
-//   width: 500px;
-//   height: 200px;
-/* border: 10px solid yellow; */
-/* border: none; */
-//   background-color: yellow;
-//   border-bottom-right-radius: 40px;
-// }
-// `;
+
 const StyledCard = styled.div`
   position: absolute;
   left: 0;

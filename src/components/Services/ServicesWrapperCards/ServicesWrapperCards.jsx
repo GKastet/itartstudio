@@ -1,5 +1,5 @@
 // import { nanoid } from "nanoid";
-// import dataServicesCard from "../../../data/сontentServicesCards";
+import PropTypes from "prop-types";
 
 import makeClassesServicesCards from "../../../helpers/makeClassesServicesCards";
 import BtnOrder from "../../Buttons/BtnOrder/BtnOrder";
@@ -11,10 +11,10 @@ import { StyledServicesWrapperCards } from "./StyledServicesWrapperCards.styled"
 
 const PLACE_ACTIVE_CARD = 3;
 
-function ServicesWrapperCards() {
+function ServicesWrapperCards({ cards }) {
+  console.log("cards: ", cards);
   const handleClickCard = (event) => {
     const selectedCard = event.currentTarget;
-    // console.log("selectedCard: ", selectedCard);
     const activeCard = document.querySelector(".active");
     const isNotActiveCard = selectedCard.id !== activeCard.id;
     const classSelectedConfirmingMove = Array.from(selectedCard.classList).find(
@@ -70,10 +70,14 @@ function ServicesWrapperCards() {
           />
         );
       })} */}
-        <BtnOrder/>
+        <BtnOrder />
       </StyledServicesWrapperCards>
     </>
   );
 }
 
 export default ServicesWrapperCards;
+
+ServicesWrapperCards.propTypes = {
+  cards: PropTypes.arrayOf(PropTypes.object),
+};

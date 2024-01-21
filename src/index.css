@@ -1,8 +1,6 @@
 @import '../node_modules/modern-normalize/modern-normalize.css';
 @import '../src/stylesheet/vars.css';
 @import '../src/stylesheet/fonts.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-
 
 :root {
   /* font-family: '400-proxima-nova', system-ui, Avenir, Helvetica, Arial, sans-serif; */

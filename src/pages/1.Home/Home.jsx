@@ -2,17 +2,16 @@
 import Hero from "../../components/Hero";
 import FeaturesList from "../../components/Features/FeaturesList/FeaturesList";
 import Services from "../../components/Services";
-import PropTypes from "prop-types";
 
 // import web from "../../images/web.png";
 // import { Container, Image, Paragraph, Time, Title } from "./HomeStyled";
 
-const Home = ({ lang }) => {
+const Home = () => {
   return (
     <>
       <Hero />
       <FeaturesList />
-      <Services lang={lang} sectionName="services" />
+      <Services />
     </>
   );
   // const [timeRemaining, setTimeRemaining] = useState({
@@ -67,7 +66,3 @@ const Home = ({ lang }) => {
 };
 
 export default Home;
-
-Home.propTypes = {
-  lang: PropTypes.string,
-};

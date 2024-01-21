@@ -11,17 +11,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  column-gap: 20px;
 
   h2 {
     position: relative;
-
     width: 100%;
     max-width: 772px;
-    margin: 0 20px 120px 0;
-
-    font-family: "700-proxima-nova";
-    font-size: 56px;
-    font-style: normal;
+    font-family: "700-Montserrat";
+    font-size: 50px;
     font-weight: 700;
     line-height: normal;
     z-index: 0;
@@ -29,8 +26,8 @@ export const Container = styled.div`
 
   h2 svg {
     position: absolute;
-    right: 202px;
-    bottom: -4px;
+    right: 165px;
+    bottom: -2px;
     z-index: -1;
   }
 `;
@@ -38,8 +35,7 @@ export const Container = styled.div`
 export const StyledServicesDescription = styled(StyledSectionDescription)`
   width: 100%;
   max-width: 772px;
-  font-family: "500-proxima-nova";
-  font-weight: 500;
+  font-size: 28px;
 
   .accent-text {
     color: #1c0f0f;
