@@ -4,7 +4,7 @@ import { HiOutlineArrowUpRight } from "react-icons/hi2";
 function HeroBtn() {
   return (
     <StyledHeroBtn>
-      Get started
+       let’s talk
       <span>
         <HiOutlineArrowUpRight size="24" />
       </span>
