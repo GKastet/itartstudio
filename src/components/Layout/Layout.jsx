@@ -1,9 +1,8 @@
-//import PropTypes from "prop-types";
 import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-const Layout = () => {
+const Layout = () => {  
   return (
     <>
       <Header />
@@ -12,10 +11,5 @@ const Layout = () => {
     </>
   );
 };
-
-// Layout.propTypes = {
-//   lang: PropTypes.string,
-//   funcChangeLanguage: PropTypes.func,
-// };
 
 export default Layout;

@@ -32,9 +32,6 @@ const ProjectsPage = ({ lang }) => {
           {lang === "ua" && sectionWhereIdeaMeets.box3.ua}
         </p>
       </div>
-      {/* <Hero />
-      <FeaturesList />
-      <Services /> */}
     </>
   );
 };

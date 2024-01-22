@@ -21,25 +21,38 @@ const Footer = ({ lang, funcChangeLanguage }) => {
       <FooterBox>
         <FooterNavList className="listMargin">
           <li>
-          <FooterTitle>Sitemap</FooterTitle>
+            <FooterTitle>Sitemap</FooterTitle>
           </li>
           <li>
-            <ScrollLink to="main" smooth={true} duration={500}>
+            <ScrollLink
+              to="main"
+              smooth={true}
+              duration={500}
+            >
               Main
             </ScrollLink>
           </li>
           <li>
-            <ScrollLink to="about" smooth={true} duration={500}>
+            <ScrollLink 
+            to="about" 
+             smooth={true}
+             duration={500}>
               About
             </ScrollLink>
           </li>
           <li>
-            <ScrollLink to="team" smooth={true} duration={500}>
+            <ScrollLink 
+            to="team" 
+             smooth={true}
+             duration={500}>
               Team
             </ScrollLink>
           </li>
           <li>
-            <ScrollLink to="services" smooth={true} duration={500}>
+            <ScrollLink 
+            to="services" 
+             smooth={true}
+             duration={500}>
               Services
             </ScrollLink>
           </li>
@@ -54,53 +67,62 @@ const Footer = ({ lang, funcChangeLanguage }) => {
         <FoterSocialList>
           <FooterTitle>Socials</FooterTitle>
           <li>
-            <ScrollLink to="main" smooth={true} duration={500}>
+            <ScrollLink to="main"
+              smooth={true}
+              duration={500}>
               Whatsapp
             </ScrollLink>
           </li>
           <li>
-            <ScrollLink to="main" smooth={true} duration={500}>
+            <ScrollLink to="main"
+              smooth={true}
+              duration={500}>
               Telegram
             </ScrollLink>
           </li>
         </FoterSocialList>
         <FooterLogoList>
           <LogoBox>
-           <Link to="/">
-             <img src={FooterLogo} alt="United web studio logo" />
-           </Link>
+            <Link to="/">
+              <img src={FooterLogo} alt="United web studio logo" />
+            </Link>
           </LogoBox>
           <FooterTagline>
-          Where idea meets innovation in every line of code
+            Where idea meets innovation in every line of code
           </FooterTagline>
           <CopyRight>
-            <li>
-            © 2024 United Web Studio
-            </li>
+            <li>© 2024 United Web Studio</li>
             <li>
               {/*Privacy Policy Посилання куди? */}
               Privacy Policy
-            </li>            
+            </li>
           </CopyRight>
         </FooterLogoList>
-        
+
         <FooterContactsList>
           <FooterTitle>Call</FooterTitle>
-                    <li>
-            <ScrollLink to="main" smooth={true} duration={500}>
+          <li>
+            <ScrollLink 
+            to="main"
+              smooth={true}
+              duration={500}>
               +380 98 876 6565
             </ScrollLink>
           </li>
           <li>
-            <Link to="main" smooth={true} duration={500}>
+            <Link 
+            to="main"            
+              duration={500}>
               +380 98 876 6565
             </Link>
           </li>
 
           <FooterTitle>Write</FooterTitle>
-           <li>
-            <Link to="main" smooth={true} duration={500}>
- webstudiounited@gmail.com
+          <li>
+            <Link 
+            to="main"            
+              duration={500}>
+              webstudiounited@gmail.com
             </Link>
           </li>
         </FooterContactsList>
