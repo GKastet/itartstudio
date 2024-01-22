@@ -1,9 +1,11 @@
 import { textsHeader } from "./textsAll/sectionHeader";
 import { textsFooter } from "./textsAll/sectionFooter";
+import { textsHero } from "./textsAll/sectionHero";
 
 export const texts = {
   header: textsHeader,
   footer: textsFooter,
+  hero: textsHero,
 };
 
 export const textsHome = {};
