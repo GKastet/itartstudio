@@ -1,12 +1,12 @@
-import { textsHeader } from "./textsAll/sectionHeader";
+// import { textsHeader } from "./textsAll/sectionHeader";
 import { textsFooter } from "./textsAll/sectionFooter";
 
 export const texts = {
-  header: textsHeader,
+  //header: textsHeader,
   footer: textsFooter,
 };
 
-export const textsHome = {};
+// export const textsHome = {};
 
 export const textsAbout = {
   sectionIntroduction: {
