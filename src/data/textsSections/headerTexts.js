@@ -5,8 +5,8 @@ export const headerTexts = {
       pl: ["główne", "o nas", "zespół", "usługi"],
       ua: ["головне", "про нас", "команда", "послуги"]
   },
-  sectionIdAndPages: ["main", "about", "team", "services"],
-  pagesPath: ["Projects", "Contacts"],
+  sectionId: ["main", "about", "team", "services"],
+  pagesPath: ["projects", "contacts"],
   logoAlt: {
       en: ["United web studio logo"],
       sk: ["United web studio logo"],
@@ -19,10 +19,14 @@ export const headerTexts = {
       pl: ["Projekty", "Kontakty"],
       ua: ["Проекти", "Контакти"]
   },
-  btnContactUs: {
-      en: ["CONTACT US"],
-      sk: ["KONTAKTUJ NÁS"],
-      pl: ["SKONTAKTUJ NAS"],
-      ua: ["ЗВ'ЯЗОК З НАМИ"]
+  btnOrder: {
+      // en: ["CONTACT US"],
+      // sk: ["KONTAKTUJ NÁS"],
+      // pl: ["SKONTAKTUJ NAS"],
+      // ua: ["ЗВ'ЯЗОК З НАМИ"]
+      en: ["ORDER"],
+      sk: ["OBJEDNAŤ"],
+      pl: ["ZAMOWIĆ"],
+      ua: ["ЗАМОВИТИ"]
   }
 }

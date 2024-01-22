@@ -74,7 +74,7 @@ export const LogoBox = styled.div`
   }
 `;
 
-export const BtnContactUs = styled.button`
+export const BtnOrder = styled.button`
   width: 182px;
   padding: 22px;
   border-radius: 200px;
