@@ -25,8 +25,27 @@ export const StyledSection = styled.section`
 
   h2 svg {
     position: absolute;
-    right: 165px;
-    bottom: -4px;
+    ${(props) => {
+      switch (props.$lang) {
+        case "en":
+          return {
+            right: "165px",
+            bottom: "-4px",
+            width: "248px",
+            height: "72px",
+          };
+        case "ua":
+          return {
+            right: "90px",
+            bottom: "38px",
+            width: "254px",
+            height: "74px",
+          };
+        default:
+          break;
+      }
+    }};
+
     z-index: -1;
   }
 `;

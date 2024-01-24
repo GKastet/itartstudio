@@ -29,7 +29,11 @@ export const StyledCard = styled.li`
     background-color cubic-bezier(0.61, -0.4, 0.49, 1.36) 600ms,
     background-image linear 600ms,
     color cubic-bezier(0.61, -0.4, 0.49, 1.36) 600ms,
-    box-shadow cubic-bezier(0.61, -0.4, 0.49, 1.36) 600ms;
+    box-shadow cubic-bezier(0.61, -0.4, 0.49, 1.36) 250ms;
+
+  &:hover {
+    box-shadow: 0px 0px 100px 0px rgba(204, 204, 204, 0.6);
+  }
 
   h3 {
     margin-right: auto;
