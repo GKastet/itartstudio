@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { StyledSectionDescription } from "../Typography/SectionDescription/SectionDescription.Styled";
 
-export const Container = styled.div`
+export const StyledSection = styled.section`
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  background: #fff;
-  color: #1c0f0f;
   padding: 0 178px 120px 178px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 20px;
+
+  & > div {
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+  }
 
   h2 {
     position: relative;
@@ -19,15 +19,33 @@ export const Container = styled.div`
     max-width: 772px;
     font-family: "700-Montserrat";
     font-size: 50px;
-    font-weight: 700;
     line-height: normal;
     z-index: 0;
   }
 
   h2 svg {
     position: absolute;
-    right: 165px;
-    bottom: -2px;
+    ${(props) => {
+      switch (props.$lang) {
+        case "en":
+          return {
+            right: "165px",
+            bottom: "-4px",
+            width: "248px",
+            height: "72px",
+          };
+        case "ua":
+          return {
+            right: "90px",
+            bottom: "38px",
+            width: "254px",
+            height: "74px",
+          };
+        default:
+          break;
+      }
+    }};
+
     z-index: -1;
   }
 `;
@@ -36,12 +54,9 @@ export const StyledServicesDescription = styled(StyledSectionDescription)`
   width: 100%;
   max-width: 772px;
   font-size: 28px;
+  line-height: 1.5;
 
   .accent-text {
-    color: #1c0f0f;
-    font-family: "700-proxima-nova";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
+    font-family: "700-Montserrat";
   }
 `;

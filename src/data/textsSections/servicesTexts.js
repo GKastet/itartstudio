@@ -1,15 +1,25 @@
+import redesignImg from "../../assets/images/redesign.png";
+import landingImg from "../../assets/images/landing.png";
+import corporateImg from "../../assets/images/corporate.png";
+
 export const servicesTexts = {
   title: {
     en: "We deliver web design and development solutions",
     sk: "",
     pl: "",
-    ua: "Ми надаємо рішення для веб-дизайну та розробки",
+    ua: "Ми надаємо рішення по веб-дизайну та розробці",
   },
   description: {
-    en: "We offer our clients a transparent and result-oriented approach with a clear process, providing steadfast guarantees in our web development services.",
+    en: "We offer our clients a transparent and <span class='accent-text'>result-oriented</span> approach with a <span class='accent-text'>clear process</span>, providing steadfast <span class='accent-text'>guarantees</span> in our web development services.",
     sk: "",
     pl: "",
-    ua: "Ми пропонуємо нашим клієнтам прозорий і орієнтований на результат підхід із чітким процесом, надаючи непохитні гарантії наших послуг веб-розробки.",
+    ua: "Ми пропонуємо нашим клієнтам прозорий і <span class='accent-text'>орієнтований на результат</span> підхід із <span class='accent-text'>чітким процесом</span>, надаючи непохитні <span class='accent-text'>гарантії</span> наших послуг веб-розробки.",
+  },
+  button_text: {
+    en: "Discuss the project",
+    sk: "",
+    pl: "",
+    ua: "Обговорити проект",
   },
   cards: [
     {
@@ -18,7 +28,7 @@ export const servicesTexts = {
         en: "Landing pages",
         sk: "",
         pl: "",
-        ua: "Лендінг сторінки",
+        ua: "Односторінкові веб-сайти",
       },
       card_description: {
         en: "It is necessary to stimulate your sales, attract new potential customers, or perhaps increase interest in a particular product, service, or even your company? No problem! There is an ideal solution for this—a one-page site (landing page), developed quickly and with minimal costs. Landing pages differ from full websites with a specific, action-focused design.",
@@ -48,6 +58,8 @@ export const servicesTexts = {
           "Швидкість виконання",
         ],
       },
+      img: landingImg,
+      img_alt: "white oval geometric shape",
     },
     {
       card_name: "corporate",
@@ -81,6 +93,8 @@ export const servicesTexts = {
         pl: "",
         ua: ["Професійний імідж", "Послідовність бренду", "Підвищена довіра"],
       },
+      img: corporateImg,
+      img_alt: "white oval geometric shape",
     },
     {
       card_name: "redesign",
@@ -122,6 +136,8 @@ export const servicesTexts = {
           "Респонсивний дизайн",
         ],
       },
+      img: redesignImg,
+      img_alt: "white oval geometric shape",
     },
   ],
 };
