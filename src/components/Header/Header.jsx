@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { useLang } from "../../langContext";
@@ -11,20 +12,18 @@ import {
   LogoBox,
   SectionsList,
 } from "./HeaderStyled";
+import ModalOrderLogic from "../Modal/ModalOrder/ModalOrderLogic/ModalOrderLogic";
 
 const Header = () => {
-  const { lang } = useLang();  
-  const {
-    sectionNames,
-    sectionId,
-    pagesPath,
-    logoAlt,
-    pagesName,
-    btnOrder,
-  } = getSectionContent(lang, "header");  
+  const [isOpen, setIsOpen] = useState(false);
+  console.log('isOpen: ', isOpen);
+  const { lang } = useLang();
+  const { sectionNames, sectionId, pagesPath, logoAlt, pagesName, btnOrder } =
+    getSectionContent(lang, "header");
 
-    const handleContactUs = () => {
+  const handleContactUs = () => {
     console.log("Contact Us");
+    setIsOpen(true);
   };
 
   return (
@@ -68,6 +67,7 @@ const Header = () => {
           </li>
         </SectionsList>
       </HeaderBox>
+      {isOpen && <ModalOrderLogic isOpen={isOpen} setIsOpen={setIsOpen} />}
     </HeaderWrapper>
   );
 };
