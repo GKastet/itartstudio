@@ -1,5 +1,6 @@
 import { StyledHeroBtn } from "./HeroBtn.styled";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
+import PropTypes from "prop-types";
 
 function HeroBtn({children}) {
   return (
@@ -11,5 +12,9 @@ function HeroBtn({children}) {
     </StyledHeroBtn>
   );
 }
+
+HeroBtn.propTypes = {
+  children:PropTypes.node,
+};
 
 export default HeroBtn;

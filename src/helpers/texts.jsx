@@ -1,6 +1,6 @@
 // import { textsHeader } from "./textsAll/sectionHeader";
 import { textsFooter } from "./textsAll/sectionFooter";
-import { textsHero } from "./textsAll/sectionHero";
+import { textsHero } from "../data/textsSections/sectionHero";
 
 export const texts = {
   //header: textsHeader,
