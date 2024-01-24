@@ -1,45 +1,45 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { texts } from "../../helpers/texts";
+import { useLang } from "../../langContext";
 import Logo from "../../images/Logo.svg";
+import getSectionContent from "../../helpers/getSectionContent";
 import BtnSelectLang from "../Buttons/BtnSelectLang/BtnSelectLang";
 import {
-  BtnContactUs,
+  BtnOrder,
   HeaderBox,
   HeaderWrapper,
   LogoBox,
   SectionsList,
 } from "./HeaderStyled";
-import { useLang } from "../../langContext";
+import ModalOrderLogic from "../Modal/ModalOrder/ModalOrderLogic/ModalOrderLogic";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  console.log('isOpen: ', isOpen);
   const { lang } = useLang();
-  const {
-    header: { sectionNames, logoAlt, pagesName, btnContactUs },
-  } = texts;
-  const sections = sectionNames[lang];
-  const sectionsTo = sectionNames.en;
-  const pages = pagesName[lang];
-  const pagesLinkTo = pagesName.en;
+  const { sectionNames, sectionId, pagesPath, logoAlt, pagesName, btnOrder } =
+    getSectionContent(lang, "header");
 
   const handleContactUs = () => {
     console.log("Contact Us");
+    setIsOpen(true);
   };
 
   return (
     <HeaderWrapper>
       <HeaderBox>
         <SectionsList className="listMargin">
-          {sections?.map((section, idx) => {
+          {sectionNames?.map((sectionName, idx) => {
             return (
-              <li key={section}>
+              <li key={sectionName}>
                 <ScrollLink
-                  to={sectionsTo[idx]}
+                  to={sectionId[idx]}
                   smooth={true}
                   duration={500}
                   style={{ textTransform: "capitalize" }}
                 >
-                  {section}
+                  {sectionName}
                 </ScrollLink>
               </li>
             );
@@ -47,26 +47,27 @@ const Header = () => {
         </SectionsList>
         <LogoBox>
           <Link to="/">
-            <img src={Logo} alt={logoAlt[lang]} />
+            <img src={Logo} alt={logoAlt} />
           </Link>
         </LogoBox>
         <SectionsList className="rightSide">
           <li>
-            <Link to={`/${pagesLinkTo[0].toLowerCase()}`}>{pages[0]}</Link>
+            <Link to={`/${pagesPath[0]}`}>{pagesName[0]}</Link>
           </li>
           <li>
-            <Link to={`/${pagesLinkTo[1].toLowerCase()}`}>{pages[1]}</Link>
+            <Link to={`/${pagesPath[1]}`}>{pagesName[1]}</Link>
           </li>
           <li>
             <BtnSelectLang />
           </li>
           <li>
-            <BtnContactUs type="button" onClick={handleContactUs}>
-              {btnContactUs[lang]}
-            </BtnContactUs>
+            <BtnOrder type="button" onClick={handleContactUs}>
+              {btnOrder}
+            </BtnOrder>
           </li>
         </SectionsList>
       </HeaderBox>
+      {isOpen && <ModalOrderLogic isOpen={isOpen} setIsOpen={setIsOpen} />}
     </HeaderWrapper>
   );
 };

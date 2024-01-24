@@ -1,3 +1,5 @@
+//import { textsHeader } from "../helpers/textsAll/sectionHeader";
+// import { headerTexts } from "./textsSections/headerTexts";
 import { headerTexts } from "./textsSections/headerTexts";
 import { servicesTexts } from "./textsSections/servicesTexts";
 
