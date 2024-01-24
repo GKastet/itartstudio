@@ -145,7 +145,8 @@ export const StyledCard = styled.li`
     margin-bottom: 40px;
     padding-right: 132px;
 
-    font-family: "400-Montserrat";
+    /* font-family: "400-Montserrat"; */
+    font-family: "400-NotoSans";
     font-size: 20px;
     line-height: 1.5;
   }

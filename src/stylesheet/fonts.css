@@ -50,7 +50,7 @@ font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
 
 @font-face {
     font-family: "400-NotoSans";
-    src: url("../assets/Fonts/Montserrat-Bold.woff2") format("woff2"),url("../assets/Fonts/Montserrat-Bold.woff") format("woff")
-    /* src: url(../assets/Fonts/NotoSans.ttf); */
+    /* src: url("../assets/Fonts/Montserrat-Bold.woff2") format("woff2"),url("../assets/Fonts/Montserrat-Bold.woff") format("woff") */
+    src: url(../assets/Fonts/NotoSans.ttf);
     /* src: url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap'); */
 }
