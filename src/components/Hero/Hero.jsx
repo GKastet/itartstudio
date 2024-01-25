@@ -1,29 +1,30 @@
+import { fontSizeDetector } from "../../helpers/fontSizeDetector";
 import { StyledHero } from "./Hero.styled";
+import { useLang } from "../../langContext";
 import SectionDescription from "../Typography/SectionDescription/SectionDescription";
 import HeroBtn from "./HeroBtn/HeroBtn";
-import { useLang } from "../../langContext";
-import { texts } from "../../helpers/texts";
+import allContent from "../../data/allContent";
 import Spline from "@splinetool/react-spline";
 
 const Hero = () => {
   const { lang } = useLang();
   const {
     hero: { title, description, button },
-  } = texts;
-
-  console.log(description[lang]);
+  } = allContent;
 
   return (
     <StyledHero>
       <div>
         <div>
-          <h1>
+          <div>
+          <h1 className={fontSizeDetector(title[lang][0], title["en"][0].length)}>
             {title[lang][0]}
             <span></span>
             <span></span>
             {title[lang][1]}
           </h1>
           <HeroBtn>{button[lang]}</HeroBtn>
+          </div>
           <SectionDescription
             dangerouslySetInnerHTML={{ __html: description[lang] }}
           />

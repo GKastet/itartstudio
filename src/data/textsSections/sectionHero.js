@@ -1,15 +1,15 @@
 export const textsHero = {
     title: {
-        en: ["Best", " digital results"],
+        en: ["Best", "digital results"],
         sk: [],
         pl: [],
         ua: ["Найкращі", "цифрові рішення"]
     },
     description: {
-        en: "We specialize in bespoke web design and innovative development, <span>bringing your brand to life</span> with visually stunning interfaces and seamless features.<span>Collaborate with us now </span> for an exceptional, immersive digital experience.",
-        sk: ["sk0", "sk1", "sk2", "sk3", "sk4", "sk5"],
-        pl: ["pl0", "pl1", "pl2", "pl3", "pl4", "pl5"],
-        ua: ["головне", "про нас", "команда", "послуги", "проекти", "контакти"]
+        en: "We specialize in bespoke web design and innovative development, <span>bringing your brand to life</span> with visually stunning interfaces and seamless features.<span> Collaborate with us now </span>for an exceptional, immersive digital experience.",
+        sk: [],
+        pl: [],
+        ua: "Ми спеціалізуємося на індивідуальному веб-дизайні та інноваційній розробці, <span>оживляючи ваш бренд</span> за допомогою візуально захопливих інтерфейсів та безперервних функцій.<span> Співпрацюйте з нами зараз </span>для надзвичайного, захопливого цифрового досвіду."
     },
     button: {
         en: "let’s talk",

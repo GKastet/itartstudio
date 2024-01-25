@@ -2,12 +2,14 @@
 // import { headerTexts } from "./textsSections/headerTexts";
 import { headerTexts } from "./textsSections/headerTexts";
 import { servicesTexts } from "./textsSections/servicesTexts";
+import { textsHero } from "./textsSections/sectionHero";
 
 const allContent = {
   header: headerTexts,
   //   hero: heroTexts,
   //   features: featuresTexts,
   services: servicesTexts,
+  hero: textsHero,
   //   faq: faqTexts,
   //   contacts: contactsTexts,
   //   footer: footerTexts,
