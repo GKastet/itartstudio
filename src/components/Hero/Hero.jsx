@@ -13,7 +13,7 @@ const Hero = () => {
   } = allContent;
 
   return (
-    <StyledHero>
+    <StyledHero id="main">
       <div>
         <div>
           <div>
