@@ -5,7 +5,7 @@ export const StyledHeroBtn = styled.button`
   font-size: 18px;
   color: var(--title-color);
   position: absolute;
-  top: 321px;
+  bottom: 28px;
   right: 73px;
   background-color: var(--yellow);
   width: 257px;
@@ -15,6 +15,12 @@ export const StyledHeroBtn = styled.button`
   justify-content: space-between;
   align-items: center;
   padding: 0 8px 0 52px;
+  box-sizing: border-box;
+
+  &.large{
+    width: 350px;
+    right: 130px;
+  }
 
   & > span {
     width: 66px;
@@ -33,4 +39,6 @@ export const StyledHeroBtn = styled.button`
   &:hover > span > svg{
     stroke: #E7F600;
   }
+
+  
 `;

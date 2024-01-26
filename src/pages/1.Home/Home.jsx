@@ -9,7 +9,7 @@ import Services from "../../components/Services";
 const Home = () => {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       <FeaturesList />
       <Services />
     </>

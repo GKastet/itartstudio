@@ -3,10 +3,15 @@ import computerBoy from "../../images/computerBoy.png";
 import girl from "../../images/girl.png";
 
 export const StyledHero = styled.section`
-  width: 100%;
-  height: 1225px;
+  width: 1920px;
+  height: 779px;
   background-color: var(--body-color);
   margin: 0 auto;
+  *,
+  ::before,
+  ::after {
+    box-sizing: content-box;
+  }
 
   h1 {
     color: var(--title-color);
@@ -27,6 +32,7 @@ export const StyledHero = styled.section`
     border-radius: 200px;
     border: 2px solid var(--yellow);
     background-image: url(${girl});
+    vertical-align: middle;
   }
 
   h1 > span:first-child {
@@ -37,10 +43,9 @@ export const StyledHero = styled.section`
 
   & > div {
     width: 100%;
-    height: 1225px;
+    height: 779px;
     display: flex;
     margin-left: 178px;
-    gap: 225px;
     padding-top: 100px;
     margin: 0 auto;
     padding-left: 178px;
@@ -48,29 +53,41 @@ export const StyledHero = styled.section`
 
   & > div > div:first-child {
     width: 904px;
-    height: 425px;
+    height: 675px;
+  }
+
+  & > div > div > div {
     position: relative;
   }
 
   div + div {
-    padding-top: 78px;
-  width: 766px;
-  margin: 0;
-  display: block;
-  overflow: hidden;
-  height: 781.5px;
+    padding-top: 139px;
+    width: 766px;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    height: 781.5px;
   }
 
   div + div > div {
     padding: 0;
-}
+  }
 
-p { 
-width: 772px;
-font-size: 28px;
-}
+  p {
+    width: 772px;
+    font-size: 28px;
+  }
 
-p > span {
-  font-family: "700-Montserrat";
-}
+  p > span {
+    font-family: "700-Montserrat";
+  }
+
+  h1.large {
+    font-size: 60px;
+    line-height: 116px;
+  }
+
+  h1.large span:first-child {
+    width: 400px;
+  }
 `;
