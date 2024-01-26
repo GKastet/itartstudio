@@ -2,7 +2,7 @@ export const textsHero = {
     title: {
         en: ["Best", "digital results"],
         sk: [],
-        pl: [],
+        pl: ["Najlepsze", "cyfrowe rozwiązania"],
         ua: ["Найкращі", "цифрові рішення"]
     },
     description: {
@@ -14,7 +14,7 @@ export const textsHero = {
     button: {
         en: "let’s talk",
         sk: [],
-        pl: [],
+        pl: ["dowiedz się więcej"],
         ua: "дізнатись більше"
     }
 }
