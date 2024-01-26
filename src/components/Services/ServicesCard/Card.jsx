@@ -4,8 +4,10 @@ import { nanoid } from "nanoid";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import icons from "../../../assets/icons.svg";
 import { StyledCard } from "./StyledCard.styled";
+import { useLang } from "../../../langContext";
 
 function Card({ handleClickCard, card, id, dataName, className }) {
+  const { lang } = useLang();
   const nameCard = { [card.card_name]: true };
 
   return (
@@ -14,6 +16,7 @@ function Card({ handleClickCard, card, id, dataName, className }) {
         id={id}
         onClick={handleClickCard}
         $name={nameCard}
+        $lang={lang}
         data-name={dataName}
         className={className}
       >

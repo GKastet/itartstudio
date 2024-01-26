@@ -5,15 +5,16 @@ import corporateImg from "../../assets/images/corporate.png";
 export const servicesTexts = {
   title: {
     en: "We deliver web design and development solutions",
-    sk: "",
+    sk: "Poskytujeme riešenia pre webdizajn a vývoj",
     pl: "",
-    ua: "Ми надаємо рішення по веб-дизайну та розробці",
+    ua: "Ми надаємо рішення з веб-дизайну та розробки",
   },
   description: {
     en: "We offer our clients a transparent and <span class='accent-text'>result-oriented</span> approach with a <span class='accent-text'>clear process</span>, providing steadfast <span class='accent-text'>guarantees</span> in our web development services.",
-    sk: "",
+    sk: "Ponúkame našim klientom transparentný a <span class='accent-text'>výsledkovo orientovaný</span> prístup s <span class='accent-text'>jasným procesom, poskytujúc pevné záruky</span> v našich službách v oblasti webového vývoja.",
     pl: "",
-    ua: "Ми пропонуємо нашим клієнтам прозорий і <span class='accent-text'>орієнтований на результат</span> підхід із <span class='accent-text'>чітким процесом</span>, надаючи непохитні <span class='accent-text'>гарантії</span> наших послуг веб-розробки.",
+    ua: "Ми пропонуємо нашим клієнтам <span class='accent-text'>прозорий</span> та <span class='accent-text'>результативно</span> налаштований підхід із чітким процесом, надаючи <span class='accent-text'>надійні гарантії</span> на наші послуги з веб-розробки.",
+    // ua: "Ми пропонуємо нашим клієнтам прозорий і <span class='accent-text'>орієнтований на результат</span> підхід із <span class='accent-text'>чітким процесом</span>, надаючи непохитні <span class='accent-text'>гарантії</span> наших послуг веб-розробки.",
   },
   button_text: {
     en: "Discuss the project",
@@ -34,7 +35,7 @@ export const servicesTexts = {
         en: "It is necessary to stimulate your sales, attract new potential customers, or perhaps increase interest in a particular product, service, or even your company? No problem! There is an ideal solution for this—a one-page site (landing page), developed quickly and with minimal costs. Landing pages differ from full websites with a specific, action-focused design.",
         sk: "",
         pl: "",
-        ua: "Необхідно стимулювати ваші продажі, залучати нових потенційних клієнтів чи, можливо, підвищувати інтерес до певного продукту, послуги чи навіть вашої компанії? Без проблем! Для цього є ідеальне рішення — односторінковий сайт (landing page), розроблений швидко та з мінімальними витратами. Цільові сторінки відрізняються від повноцінних веб-сайтів спеціальним дизайном, орієнтованим на дії.",
+        ua: "Потрібно стимулювати ваші продажі, привертати нових потенційних клієнтів чи, можливо, збільшити інтерес до конкретного продукту, послуги чи навіть вашої компанії? Немає проблеми! Є ідеальне рішення для цього - односторінковий сайт (лендінг), який швидкий в розробці, а також потребує менше витрат у порівнянні з розробкою багатосторінкових вебсайтів. Лендінги відрізняються від повноцінних веб-сайтів специфічним дизайном, спрямованим на дії .",
       },
       main_actions_list: {
         en: ["web design", "web development", "seo", "copywriting"],
@@ -50,8 +51,8 @@ export const servicesTexts = {
       },
       advantages_list: {
         en: ["Cost-effective", "Optimised conversion", "Quick deployment"],
-        sk: "",
-        pl: "",
+        sk: [""],
+        pl: [""],
         ua: [
           "Економічно ефективно",
           "Оптимізоване перетворення",
@@ -77,8 +78,8 @@ export const servicesTexts = {
       },
       main_actions_list: {
         en: ["web design", "web development", "branding", "copywriting"],
-        sk: [],
-        pl: [],
+        sk: [""],
+        pl: [""],
         ua: ["web дизайн", "web розробка", "брендінг", "копірайтинг"],
       },
       advantages_list_title: {
@@ -89,8 +90,8 @@ export const servicesTexts = {
       },
       advantages_list: {
         en: ["Professional image", "Brand consistency", "Enhanced credibility"],
-        sk: "",
-        pl: "",
+        sk: [""],
+        pl: [""],
         ua: ["Професійний імідж", "Послідовність бренду", "Підвищена довіра"],
       },
       img: corporateImg,
@@ -112,8 +113,8 @@ export const servicesTexts = {
       },
       main_actions_list: {
         en: ["web design", "web development", "adaptation"],
-        sk: [],
-        pl: [],
+        sk: [""],
+        pl: [""],
         ua: ["web дизайн", "web розробка", "адаптивність"],
       },
       advantages_list_title: {
@@ -128,8 +129,8 @@ export const servicesTexts = {
           "Improved functionality",
           "Responsive design",
         ],
-        sk: "",
-        pl: "",
+        sk: [""],
+        pl: [""],
         ua: [
           "Оживлена привабливість",
           "Покращена функціональність",

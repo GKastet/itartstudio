@@ -15,7 +15,6 @@ function Services() {
     lang,
     "services"
   );
-  // const language = {[lang]: true}
 
   return (
     <StyledSection id="services" $lang={lang}>
@@ -23,7 +22,7 @@ function Services() {
       <div>
         <h2>
           {title}
-          <svg width="248px" height="72px" viewBox="0 0 110 32">
+          <svg viewBox="0 0 110 32">
             <use href={icons + "#outline_text"}></use>
           </svg>
         </h2>

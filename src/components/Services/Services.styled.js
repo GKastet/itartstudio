@@ -10,7 +10,16 @@ export const StyledSection = styled.section`
   & > div {
     width: 100%;
     display: flex;
-    column-gap: 20px;
+    column-gap: ${(props) => {
+      switch (props.$lang) {
+        case "en":
+          return "20px";
+        case "ua":
+          return "65px";
+        default:
+          break;
+      }
+    }};
   }
 
   h2 {
@@ -36,10 +45,17 @@ export const StyledSection = styled.section`
           };
         case "ua":
           return {
-            right: "90px",
-            bottom: "38px",
-            width: "254px",
-            height: "74px",
+            right: "18px",
+            bottom: "31px",
+            width: "337px",
+            height: "81px",
+          };
+        case "sk":
+          return {
+            right: "277px",
+            bottom: "-9px",
+            width: "183px",
+            height: "81px",
           };
         default:
           break;

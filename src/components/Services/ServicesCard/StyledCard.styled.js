@@ -26,9 +26,8 @@ export const StyledCard = styled.li`
   color: var(--title-color);
 
   transition: transform cubic-bezier(0.61, -0.4, 0.49, 1.36) 600ms,
-    background-color cubic-bezier(0.61, -0.4, 0.49, 1.36) 600ms,
-    background-image linear 600ms,
-    color cubic-bezier(0.61, -0.4, 0.49, 1.36) 600ms,
+    background-image linear 700ms,
+    /* color cubic-bezier(0.61, -0.4, 0.49, 1.36) 600ms, */ color linear 700ms,
     box-shadow cubic-bezier(0.61, -0.4, 0.49, 1.36) 250ms;
 
   &:hover {
@@ -88,6 +87,7 @@ export const StyledCard = styled.li`
   }
   &.active h3 {
     color: var(--white);
+    transition: color linear 700ms;
   }
   .header-card-wrapper {
     padding: 0 40px;
@@ -127,7 +127,10 @@ export const StyledCard = styled.li`
     display: flex;
     flex-direction: row;
     column-gap: 20px;
-    margin-bottom: 40px;
+    margin-bottom: ${(props) =>
+      (props.$name.landing || props.$name.corporate) && props.$lang === "ua"
+        ? "30px"
+        : "40px"};
 
     font-family: "400-Montserrat";
     font-weight: 400;
@@ -146,8 +149,20 @@ export const StyledCard = styled.li`
   .text-content-card-wrapper p {
     width: 100%;
     max-width: 904px;
-    margin-bottom: 40px;
-    padding-right: 132px;
+    margin-bottom: ${(props) =>
+      (props.$name.landing || props.$name.corporate) && props.$lang === "ua"
+        ? "30px"
+        : "40px"};
+    padding-right: ${
+      (props) =>
+        props.$name.landing && props.$lang === "ua" ? "90px" : "132px"
+      // switch (props.$lang) {
+      //   case "ua":
+      //     return "90px";
+      //   default:
+      //     return "132px";
+      // }
+    };
 
     /* font-family: "400-Montserrat"; */
     font-family: "400-NotoSans";
