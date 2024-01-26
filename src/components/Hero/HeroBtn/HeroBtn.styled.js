@@ -17,6 +17,11 @@ export const StyledHeroBtn = styled.button`
   padding: 0 8px 0 52px;
   box-sizing: border-box;
 
+  &.large{
+    width: 350px;
+    right: 130px;
+  }
+
   & > span {
     width: 66px;
     height: 66px;

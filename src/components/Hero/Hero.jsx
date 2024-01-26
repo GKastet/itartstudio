@@ -23,9 +23,9 @@ const Hero = () => {
             <span></span>
             {title[lang][1]}
           </h1>
-          <HeroBtn>{button[lang]}</HeroBtn>
+          <HeroBtn className={fontSizeDetector(button[lang], button["en"].length)}>{button[lang]}</HeroBtn>
           </div>
-          <SectionDescription
+          <SectionDescription className={fontSizeDetector(description[lang], description["en"].length)}
             dangerouslySetInnerHTML={{ __html: description[lang] }}
           />
         </div>

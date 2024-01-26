@@ -3,8 +3,8 @@ import computerBoy from "../../images/computerBoy.png";
 import girl from "../../images/girl.png";
 
 export const StyledHero = styled.section`
-  width: 100%;
-  height: 1225px;
+  width: 1920px;
+  height: 779px;
   background-color: var(--body-color);
   margin: 0 auto;
   *,
@@ -43,10 +43,9 @@ export const StyledHero = styled.section`
 
   & > div {
     width: 100%;
-    height: 1225px;
+    height: 779px;
     display: flex;
     margin-left: 178px;
-    gap: 225px;
     padding-top: 100px;
     margin: 0 auto;
     padding-left: 178px;
@@ -62,7 +61,7 @@ export const StyledHero = styled.section`
   }
 
   div + div {
-    padding-top: 78px;
+    padding-top: 139px;
     width: 766px;
     margin: 0;
     display: block;
@@ -86,5 +85,9 @@ export const StyledHero = styled.section`
   h1.large {
     font-size: 60px;
     line-height: 116px;
+  }
+
+  h1.large span:first-child {
+    width: 400px;
   }
 `;
