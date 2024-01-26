@@ -1,18 +1,14 @@
-// import { nanoid } from "nanoid";
+import { nanoid } from "nanoid";
 import PropTypes from "prop-types";
 
 import makeClassesServicesCards from "../../../helpers/makeClassesServicesCards";
 import BtnOrder from "../../Buttons/BtnOrder/BtnOrder";
-import CorporateCard from "../ServicesCards/CorporateCard";
-import LandingCard from "../ServicesCards/LandingCard";
-import RedesignCard from "../ServicesCards/RedesignCards";
 import { StyledServicesWrapperCards } from "./StyledServicesWrapperCards.styled";
-// import Card from "../ServicesCards/Card";
+import Card from "../ServicesCard/Card";
 
 const PLACE_ACTIVE_CARD = 3;
 
-function ServicesWrapperCards({ cards }) {
-  console.log("cards: ", cards);
+function ServicesWrapperCards({ cards, btn_text }) {
   const handleClickCard = (event) => {
     const selectedCard = event.currentTarget;
     const activeCard = document.querySelector(".active");
@@ -53,24 +49,21 @@ function ServicesWrapperCards({ cards }) {
   return (
     <>
       <StyledServicesWrapperCards>
-        <LandingCard handleClickCard={handleClickCard} />
-        <CorporateCard handleClickCard={handleClickCard} />
-        <RedesignCard handleClickCard={handleClickCard} />
-        {/* {dataServicesCard.map((card, idx) => {
-        return (
-          <Card
-            key={nanoid()}
-            dataName={card.name_card}
-            handleClickCard={handleClickCard}
-            id={idx + 1}
-            className={`${card.name_card} ${
-              card.name_card === "redesign" && "active"
-            }`}
-            card={card}
-          />
-        );
-      })} */}
-        <BtnOrder />
+        {cards.map((card, idx) => {
+          return (
+            <Card
+              key={nanoid()}
+              dataName={card.card_name}
+              handleClickCard={handleClickCard}
+              id={idx + 1}
+              className={`${card.card_name} ${
+                card.card_name === "redesign" && "active"
+              }`}
+              card={card}
+            />
+          );
+        })}
+        <BtnOrder>{btn_text}</BtnOrder>
       </StyledServicesWrapperCards>
     </>
   );
@@ -80,4 +73,5 @@ export default ServicesWrapperCards;
 
 ServicesWrapperCards.propTypes = {
   cards: PropTypes.arrayOf(PropTypes.object),
+  btn_text: PropTypes.string,
 };
