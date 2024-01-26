@@ -53,8 +53,8 @@ export const StyledSection = styled.section`
         case "sk":
           return {
             right: "277px",
-            bottom: "-9px",
-            width: "183px",
+            bottom: "34px",
+            width: "179px",
             height: "81px",
           };
         default:
