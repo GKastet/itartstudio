@@ -3,7 +3,7 @@ export const aboutTexts = {
         en: "People who are passionately <span>united</span> by the idea",
         sk: [],
         pl: ["Najlepsze", "cyfrowe rozwiązania"],
-        ua: "Люди, які пристрастно <span>поєднані</span> ідеєю"
+        ua: "Люди, які <span>поєднані</span> спільною ідеєю"
     },
     description: {
         en: "At the heart of our web studio beats a collective enthusiasm for innovation and creativity. Our team is a diverse blend of <span>skilled professionals</span>, each contributing a unique set of talents to elevate your digital experience.",
