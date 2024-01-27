@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 export const StyledAbout = styled.section`
-  width: 100%;
+  width: 1920px;
   height: 1038px;
   padding-top: 60px;
   margin: 0 auto;
+
+  /* &.inView{
+    background-color: blue;
+  } */
 
   img {
     width: 818px;
