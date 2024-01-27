@@ -1,6 +1,6 @@
 export const aboutTexts = {
     title: {
-        en: "People who are passionately <span>united</span> by the idea",
+        en: "People who are passionately <span>united</span> by the idea &#128161",
         sk: [],
         pl: ["Najlepsze", "cyfrowe rozwiązania"],
         ua: "Люди, які <span>поєднані</span> спільною ідеєю"

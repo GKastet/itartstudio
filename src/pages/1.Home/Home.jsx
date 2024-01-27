@@ -2,7 +2,6 @@ import Hero from "../../components/Hero";
 import FeaturesList from "../../components/Features/FeaturesList/FeaturesList";
 import Services from "../../components/Services";
 import About from "../../components/About/About";
-
 // import web from "../../images/web.png";
 // import { Container, Image, Paragraph, Time, Title } from "./HomeStyled";
 

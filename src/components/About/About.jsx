@@ -17,17 +17,17 @@ function About() {
   } = allContent;
 
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.1,
   });
 
   return (
-    <StyledAbout ref={ref} className={inView && "inView"} id="about">
-      <div>
+    <StyledAbout ref={ref} id="about">
+      <div> 
         <div>
-          <img src={image} alt="developer at work" />
+          <img src={image} alt="developer at work" className={inView ? "inView" : ""}/>
         </div>
         <div>
-          <SecondaryTitle dangerouslySetInnerHTML={{ __html: title[lang] }} />
+          <SecondaryTitle dangerouslySetInnerHTML={{ __html: title[lang]}}/>
           <SectionDescription
             className={fontSizeDetector(
               description[lang],

@@ -6,6 +6,7 @@ export const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
   color: var(--main-text-color);
+  scroll-snap-align: end;
 `;
 
 export const FooterBox = styled.div`
