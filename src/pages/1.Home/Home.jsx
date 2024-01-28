@@ -10,7 +10,7 @@ import Questions from "../../components/FAQ";
 const Home = () => {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       <FeaturesList />
       <Services />
       <Questions/>

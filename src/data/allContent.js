@@ -3,6 +3,7 @@
 import { faqTexts } from "./textsSections/faqTexts";
 import { headerTexts } from "./textsSections/headerTexts";
 import { servicesTexts } from "./textsSections/servicesTexts";
+import { textsHero } from "./textsSections/sectionHero";
 
 
 const allContent = {
@@ -10,6 +11,7 @@ const allContent = {
   //   hero: heroTexts,
   //   features: featuresTexts,
   services: servicesTexts,
+  hero: textsHero,
   faq: faqTexts,
   //   contacts: contactsTexts,
   //   footer: footerTexts,

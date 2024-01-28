@@ -10,10 +10,10 @@ export const BtnOrderStyled = styled.button`
   justify-content: center;
   align-items: center;
   border-radius: 200px;
-  background: #e7f63c;
+  border: none;
+  background-color: var(--yellow);
   font-size: 18px;
   text-transform: uppercase;
-  color: #1c0f0f;
-  outline: 1px solid red;
+
   z-index: 4;
 `;
