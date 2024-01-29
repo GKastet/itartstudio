@@ -17,4 +17,4 @@ export const textsHero = {
         pl: ["dowiedz się więcej"],
         ua: "дізнатись більше"
     }
-}
+};
