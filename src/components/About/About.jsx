@@ -6,7 +6,7 @@ import image from "../../images/About@2x.webp";
 import SecondaryTitle from "../Typography/SecondaryTitle/SecondaryTitle";
 import SectionDescription from "../Typography/SectionDescription/SectionDescription";
 import AccentText from "../Typography/AccentText/AccentText";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 
 // import TickerYellow from "../Ticker/TickerYellow";
 
@@ -16,15 +16,15 @@ function About() {
     about: { title, description, accentText },
   } = allContent;
 
-  const { ref, inView } = useInView({
-    threshold: 0.1,
-  });
+//   const { ref, inView } = useInView({
+//     threshold: 0.1,
+//   });
 
   return (
-    <StyledAbout ref={ref} id="about">
+    <StyledAbout id="about">
       <div> 
         <div>
-          <img src={image} alt="developer at work" className={inView ? "inView" : ""}/>
+          <img src={image} alt="developer at work"/>
         </div>
         <div>
           <SecondaryTitle dangerouslySetInnerHTML={{ __html: title[lang]}}/>
