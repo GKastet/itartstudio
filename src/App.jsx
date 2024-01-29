@@ -8,6 +8,7 @@ const Projects = lazy(() => import("./pages/2.Projects"));
 const Contacts = lazy(() => import("./pages/3.Contacts"));
 
 function App() {
+  
   return (
     <Suspense fallback={<Loader />}>
       <Routes>

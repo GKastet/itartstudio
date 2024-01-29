@@ -10,7 +10,7 @@ import {
 } from "./FeaturesListStyled";
 import icon from "../../../assets/icons.svg";
 import TickerBlack from "../../Ticker/TickerBlack";
-import TickerYellow from "../../Ticker/TickerYellow";
+// import TickerYellow from "../../Ticker/TickerYellow";
 
 const FeaturesList = () => {
   return (
@@ -33,7 +33,7 @@ const FeaturesList = () => {
           <FeaturesItemResult />
         </FeaturesListS>
       </FeatersSection>
-      <TickerYellow />
+      {/* <TickerYellow /> */}
     </Container>
   );
 };

@@ -3,13 +3,14 @@
 import { headerTexts } from "./textsSections/headerTexts";
 import { servicesTexts } from "./textsSections/servicesTexts";
 import { textsHero } from "./textsSections/sectionHero";
+import { aboutTexts } from "./textsSections/aboutTexts";
 
 const allContent = {
   header: headerTexts,
-  //   hero: heroTexts,
   //   features: featuresTexts,
   services: servicesTexts,
   hero: textsHero,
+  about: aboutTexts,
   //   faq: faqTexts,
   //   contacts: contactsTexts,
   //   footer: footerTexts,
