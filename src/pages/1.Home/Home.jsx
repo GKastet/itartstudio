@@ -1,5 +1,5 @@
 // import { useState, useEffect } from "react";
-// import Hero from "../../components/Hero";
+import Hero from "../../components/Hero";
 import ContactUs from "../../components/ContactUs/ContactUs";
 import FeaturesList from "../../components/Features/FeaturesList/FeaturesList";
 import Services from "../../components/Services";
@@ -15,8 +15,8 @@ const Home = () => {
       <Hero />
       <FeaturesList />
       <Services />
-      <ContactUs/>
       <Questions/>
+      <ContactUs/>
     </>
   );
   // const [timeRemaining, setTimeRemaining] = useState({
