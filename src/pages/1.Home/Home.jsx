@@ -3,6 +3,7 @@
 import ContactUs from "../../components/ContactUs/ContactUs";
 import FeaturesList from "../../components/Features/FeaturesList/FeaturesList";
 import Services from "../../components/Services";
+import Questions from "../../components/FAQ";
 
 
 // import web from "../../images/web.png";
@@ -11,10 +12,11 @@ import Services from "../../components/Services";
 const Home = () => {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       <FeaturesList />
       <Services />
       <ContactUs/>
+      <Questions/>
     </>
   );
   // const [timeRemaining, setTimeRemaining] = useState({
