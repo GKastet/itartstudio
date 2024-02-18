@@ -9,17 +9,16 @@ export const FeaturesItemInfoWrap = styled.div`
 `;
 
 export const FeaturesItemTitle = styled.h3`
-  font-family: "700-proxima-nova";
-  font-size: 56px;
-  font-weight: 700;
+  font-family: "700-Montserrat";
+  font-size: 50px;
   line-height: 1.2;
   color: var(--main-text-color);
 `;
 
 export const FeaturesItemContent = styled.p`
-  font-family: "500-proxima-nova";
+  font-family: "400-NotoSans";
   font-size: 20px;
-  font-weight: 500;
+  line-height: 1.5;
   color: var(--primary-text-color);
 `;
 
@@ -30,14 +29,15 @@ export const FeaturesItemWrapperS = styled.li`
   position: relative;
   max-width: 508px;
   width: 100%;
-  height: 240px;
-  padding: 60px 60px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* min-height: 240px;
+  height: 100%; */
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
   background-color: var(--gray-background-color);
   border-radius: 20px;
 
   &.corner-top {
+    padding: 69px 60px 68px;
     &::before {
       content: "";
       position: absolute;
@@ -66,6 +66,7 @@ export const FeaturesItemWrapperS = styled.li`
   }
 
   &.corner-bottom {
+    padding: 60px 60px;
     &::before {
       content: "";
       position: absolute;

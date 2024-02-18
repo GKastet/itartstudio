@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { LangProvider } from "./langContext.jsx";
 import App from "./App.jsx";
 import "./index.css";
+// import 'react-international-phone/style.css';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   // <React.StrictMode>

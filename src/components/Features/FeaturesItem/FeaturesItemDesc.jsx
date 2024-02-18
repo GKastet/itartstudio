@@ -9,9 +9,7 @@ const FeaturesItemDesc = () => {
   return (
     <FeaturesItemWrapperS className="corner-bottom">
       <FeaturesItemContent>
-        Based in Europe with roots in Ukraine, our passionate team comprises
-        skilled web designers and developers. We transform ideas into remarkable
-        online experiences.
+      Based in Europe with roots originating in Ukraine, our passionate team comprises highly skilled web designers, developers, and copywriters.
       </FeaturesItemContent>
 
       <CircleWrapper className="corner-bottom">
